@@ -143,8 +143,8 @@ export default function Home() {
       <Image
         src="/historia.jpg"
         alt="La banda"
-        width={1200}
-        height={1200}
+        width={634}
+        height={634}
         className="object-cover w-full h-full"
       />
     </div>
