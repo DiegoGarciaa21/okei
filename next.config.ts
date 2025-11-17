@@ -3,11 +3,11 @@
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
-    value: `
+    value:
+      `
       default-src 'self';
-      img-src 'self' https: data: blob:;
+      img-src 'self' data: blob: https:;
       script-src 'self';
-      script-src-elem 'self';
       style-src 'self' 'unsafe-inline';
       font-src 'self' data:;
       frame-src https://open.spotify.com;
@@ -18,7 +18,7 @@ const securityHeaders = [
       form-action 'self';
       frame-ancestors 'self';
       upgrade-insecure-requests;
-    `.replace(/\s{2,}/g, " ").trim(),
+    `.replace(/\n/g, ""),
   },
   {
     key: "Permissions-Policy",
