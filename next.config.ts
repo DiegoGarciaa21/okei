@@ -2,12 +2,31 @@
 
 const securityHeaders = [
   {
-    key: "X-DNS-Prefetch-Control",
-    value: "on",
+    key: "Content-Security-Policy",
+    value:
+      `
+      default-src 'self';
+      img-src 'self' data: blob: https:;
+      script-src 'self';
+      style-src 'self' 'unsafe-inline';
+      font-src 'self' data:;
+      frame-src https://open.spotify.com;
+      connect-src 'self';
+      media-src 'self' blob:;
+      object-src 'none';
+      base-uri 'self';
+      form-action 'self';
+      frame-ancestors 'self';
+      upgrade-insecure-requests;
+    `.replace(/\n/g, ""),
   },
   {
-    key: "Strict-Transport-Security",
-    value: "max-age=63072000; includeSubDomains; preload",
+    key: "Permissions-Policy",
+    value: "camera=(), microphone=(), geolocation=(), browsing-topics=()",
+  },
+  {
+    key: "Referrer-Policy",
+    value: "strict-origin-when-cross-origin",
   },
   {
     key: "X-Frame-Options",
@@ -18,28 +37,8 @@ const securityHeaders = [
     value: "nosniff",
   },
   {
-    key: "Referrer-Policy",
-    value: "strict-origin-when-cross-origin",
-  },
-  {
-    key: "Permissions-Policy",
-    value:
-      "camera=(), microphone=(), geolocation=(), browsing-topics=()",
-  },
-  {
-    key: "Content-Security-Policy",
-    value: `
-      default-src 'self';
-      img-src 'self' data: blob: https:;
-      script-src 'self' 'unsafe-inline' 'unsafe-eval';
-      style-src 'self' 'unsafe-inline';
-      font-src 'self' data:;
-      frame-src https://open.spotify.com;
-      connect-src 'self';
-      media-src 'self' blob:;
-      object-src 'none';
-      base-uri 'self';
-    `.replace(/\s{2,}/g, " ").trim(),
+    key: "Strict-Transport-Security",
+    value: "max-age=63072000; includeSubDomains; preload",
   },
 ];
 
@@ -51,10 +50,6 @@ const nextConfig = {
         headers: securityHeaders,
       },
     ];
-  },
-
-  images: {
-    formats: ["image/avif", "image/webp"],
   },
 };
 
