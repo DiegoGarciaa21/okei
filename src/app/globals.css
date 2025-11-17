@@ -1,10 +1,17 @@
 /* ============================= */
-/* IMPORTS (deben ir al inicio) */
+/* IMPORTS (compatible con Tailwind v4) */
 /* ============================= */
 @import "tailwindcss";
 
 /* ============================= */
-/* VARIABLES GLOBALES            */
+/* VARIABLES & THEME (Tailwind v4) */
+/* ============================= */
+@theme {
+  --gradient-page: radial-gradient(circle at center, #111 0%, #0a0a0a 100%);
+}
+
+/* ============================= */
+/* VARIABLES GLOBALES */
 /* ============================= */
 :root {
   --background: #000000;
@@ -19,7 +26,7 @@
 }
 
 /* ============================= */
-/* ESTILOS GLOBALES              */
+/* ESTILOS GLOBALES */
 /* ============================= */
 html {
   scroll-behavior: smooth;
@@ -32,7 +39,7 @@ body {
 }
 
 /* ============================= */
-/* ANIMACIONES                   */
+/* ANIMACIONES */
 /* ============================= */
 @keyframes marquee {
   0% { transform: translateX(100%); }
@@ -45,7 +52,7 @@ body {
 }
 
 /* ============================= */
-/* UTILIDADES PERSONALIZADAS     */
+/* UTILIDADES PERSONALIZADAS */
 /* ============================= */
 @layer utilities {
   .bg-punk-animated {

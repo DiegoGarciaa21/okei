@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Johnny Chombo",
+    "rol": "Guitarra y Voz",
+    "foto": "/integrantes/johnny.jpg",
+    "fila": 1
+  },
+  {
+    "nombre": "Jorge Hueso",
+    "rol": "Bajo y Coros",
+    "foto": "/integrantes/jorge.jpg",
+    "fila": 1
+  },
+  {
+    "nombre": "Mario Pocho",
+    "rol": "Batería y Coros",
+    "foto": "/integrantes/mario.jpg",
+    "fila": 1
+  },
+  {
+    "nombre": "Armando Belze",
+    "rol": "2da Voz",
+    "foto": "/integrantes/armando.jpg",
+    "fila": 2
+  }
+]

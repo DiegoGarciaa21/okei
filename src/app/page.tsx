@@ -67,12 +67,6 @@ export default function Home() {
   {/* Overlay punk */}
   <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/70 to-red-900/40 z-10"></div>
 
-  {/* Textura */}
-  <div
-    className="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none z-20"
-    style={{ backgroundImage: "url('/noise.png')" }}
-  ></div>
-
   {/* Contenido */}
   <motion.div
     className="relative z-30 p-8 rounded-xl text-center backdrop-blur-md bg-black/30 shadow-2xl"
