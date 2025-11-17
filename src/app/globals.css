@@ -1,0 +1,66 @@
+/* ============================= */
+/* IMPORTS (deben ir al inicio) */
+/* ============================= */
+@import "tailwindcss";
+
+/* ============================= */
+/* VARIABLES GLOBALES            */
+/* ============================= */
+:root {
+  --background: #000000;
+  --foreground: #f0f0f0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+}
+
+/* ============================= */
+/* ESTILOS GLOBALES              */
+/* ============================= */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, sans-serif;
+}
+
+/* ============================= */
+/* ANIMACIONES                   */
+/* ============================= */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+  white-space: nowrap;
+}
+
+/* ============================= */
+/* UTILIDADES PERSONALIZADAS     */
+/* ============================= */
+@layer utilities {
+  .bg-punk-animated {
+    background: 
+      radial-gradient(circle at 20% 20%, #facc15 0%, transparent 20%),
+      radial-gradient(circle at 80% 30%, #facc1515 0%, transparent 25%),
+      radial-gradient(circle at 50% 70%, #facc1520 0%, transparent 30%);
+    background-color: #0a0a0a;
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    animation: punkBgMove 20s ease-in-out infinite alternate;
+  }
+
+  @keyframes punkBgMove {
+    0% { background-position: 20% 20%, 80% 30%, 50% 70%; }
+    100% { background-position: 25% 25%, 75% 35%, 55% 65%; }
+  }
+}
