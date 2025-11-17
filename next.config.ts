@@ -1,24 +1,25 @@
 /** @type {import('next').NextConfig} */
 
+const isDev = process.env.NODE_ENV === "development";
+
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
-    value:
-      `
+    value: `
       default-src 'self';
       img-src 'self' data: blob: https:;
-      script-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.vercel.app https://vercel.live;
       style-src 'self' 'unsafe-inline';
       font-src 'self' data:;
       frame-src https://open.spotify.com;
-      connect-src 'self';
+      connect-src 'self' https://*.vercel.app https://vercel.live;
       media-src 'self' blob:;
       object-src 'none';
       base-uri 'self';
       form-action 'self';
       frame-ancestors 'self';
       upgrade-insecure-requests;
-    `.replace(/\n/g, ""),
+    `.replace(/\n/g, " "),
   },
   {
     key: "Permissions-Policy",
@@ -41,6 +42,7 @@ const securityHeaders = [
     value: "max-age=63072000; includeSubDomains; preload",
   },
 ];
+
 
 const nextConfig = {
   async headers() {
