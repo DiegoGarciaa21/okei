@@ -1,18 +1,15 @@
 /* ============================= */
-/* IMPORTS (compatible con Tailwind v4) */
+/* IMPORTS (Tailwind v4) */
 /* ============================= */
 @import "tailwindcss";
 
 /* ============================= */
-/* VARIABLES & THEME (Tailwind v4) */
+/* VARIABLES & THEME */
 /* ============================= */
 @theme {
   --gradient-page: radial-gradient(circle at center, #111 0%, #0a0a0a 100%);
 }
 
-/* ============================= */
-/* VARIABLES GLOBALES */
-/* ============================= */
 :root {
   --background: #000000;
   --foreground: #f0f0f0;
@@ -33,7 +30,7 @@ html {
 }
 
 body {
-  background: var(--background);
+  background: inherit;
   color: var(--foreground);
   font-family: system-ui, sans-serif;
 }
@@ -41,33 +38,114 @@ body {
 /* ============================= */
 /* ANIMACIONES */
 /* ============================= */
-@keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade { animation: fadeIn 0.4s ease forwards; }
+
+/* ============================= */
+/* SLIDER GLOBAL */
+/* ============================= */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  cursor: pointer;
 }
 
-.animate-marquee {
-  animation: marquee 15s linear infinite;
-  white-space: nowrap;
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    #ef4444 var(--progress, 0%),
+    #27272a var(--progress, 0%)
+  );
+}
+
+input[type="range"]::-moz-range-track {
+  height: 4px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    to right,
+    #ef4444 var(--progress, 0%),
+    #27272a var(--progress, 0%)
+  );
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: #ef4444;
+  border: 2px solid #111827;
+  margin-top: -5px;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  background: #ef4444;
+  border: 2px solid #111827;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-moz-range-thumb:hover {
+  transform: scale(1.15);
+}
+
+.muted-slider::-webkit-slider-runnable-track,
+.muted-slider::-moz-range-track {
+  background: #27272a !important;
+}
+
+.muted-slider::-webkit-slider-thumb,
+.muted-slider::-moz-range-thumb {
+  background: #6b6b6b !important;
 }
 
 /* ============================= */
-/* UTILIDADES PERSONALIZADAS */
+/* NAVBAR underline */
 /* ============================= */
-@layer utilities {
-  .bg-punk-animated {
-    background: 
-      radial-gradient(circle at 20% 20%, #facc15 0%, transparent 20%),
-      radial-gradient(circle at 80% 30%, #facc1515 0%, transparent 25%),
-      radial-gradient(circle at 50% 70%, #facc1520 0%, transparent 30%);
-    background-color: #0a0a0a;
-    background-repeat: no-repeat;
-    background-size: 300px 300px;
-    animation: punkBgMove 20s ease-in-out infinite alternate;
-  }
-
-  @keyframes punkBgMove {
-    0% { background-position: 20% 20%, 80% 30%, 50% 70%; }
-    100% { background-position: 25% 25%, 75% 35%, 55% 65%; }
-  }
+.nav-underline {
+  position: relative;
+  display: inline-block;
 }
+
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #ef4444;
+  transition: width 0.25s ease-in-out;
+}
+
+.nav-underline:hover::after,
+.nav-underline.active::after {
+  width: 100%;
+}
+
+/* ============================= */
+/* AJUSTE UNIVERSAL SCROLL */
+/* ============================= */
+@keyframes pulseTitle {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-pulseTitle {
+  animation: pulseTitle 3s ease-in-out infinite;
+}
+

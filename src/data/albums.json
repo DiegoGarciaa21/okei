@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Álbum 1",
+    "cover": "/albums/album1.jpg",
+    "tracks": [
+      { "title": "INTRO", "src": "/music/1-LOS-SAURIOS-INTRO.mp3" },
+      { "title": "VICTIMAS", "src": "/music/2-LOS-SAURIOS-VICTIMAS.mp3" },
+      { "title": "MALDITA HIPOKRESIA", "src": "/music/3-LOS SAURIOS - MALDITA HIPOKRESIA.mp3" },
+      { "title": "UNA-NOCHE-DE-ROCK-AND-ROLL", "src": "/music/4-LOS-SAURIOS-UNA-NOCHE-DE-ROCK-AND-ROLL.mp3" },
+      { "title": "LULU", "src": "/music/5-LOS SAURIOS - LULU.mp3" },
+      { "title": "INKARRI", "src": "/music/6-LOS-SAURIOS-INKARRI.mp3" },
+      { "title": "YA-ESTAS-MUERTO", "src": "/music/7-LOS-SAURIOS-YA-ESTAS-MUERTO.mp3" },
+      { "title": "VICTIMAS-BONUS", "src": "/music/8-LOS-SAURIOS-VICTIMAS-_bonus-chombo_.mp3" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Álbum 2",
+    "cover": "/albums/album2.jpg",
+    "tracks": [
+      { "title": "INTRO", "src": "/music/music2/01 intro.mp3" },
+      { "title": "UNA GRAN LECCIÓN", "src": "/music/music2/02 una gran lección.mp3" },
+      { "title": "MAMÓN", "src": "/music/music2/03 mamón.mp3" },
+      { "title": "CÁRCEL", "src": "/music/music2/04 cárcel.mp3" },
+      { "title": "MIS KOLEGAS", "src": "/music/music2/05 mis kolegas.mp3" },
+      { "title": "ROCK Y VIOLENCIA", "src": "/music/music2/06 rock y violencia.mp3" },
+      { "title": "LA NOCHE DE LOS CRISTALES ROTOS", "src": "/music/music2/07 la noche de los cristales rotos.mp3" },
+      { "title": "FABIANA", "src": "/music/music2/08 fabiana.mp3" },
+      { "title": "PARA YMER", "src": "/music/music2/09 para ymer (la cancion de belze).mp3" },
+      { "title": "UNA NOCHE MAS", "src": "/music/music2/10 una noche mas.mp3" },
+      { "title": "BASTARDOS FASCISTAS", "src": "/music/music2/11 bastardos fascistas.mp3" },
+      { "title": "KAOS", "src": "/music/music2/12 kaos.mp3" },
+      { "title": "NO NOS KANSAREMOS DE JODER", "src": "/music/music2/13 no nos kansaremos de joder.mp3" },
+      { "title": "MORIR", "src": "/music/music2/14 morir.mp3" },
+      { "title": "UNA NOCHE MAS II", "src":"/music/music2/15 una noche mas version 2.mp3" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Álbum 3",
+    "cover": "/albums/album3.jpg",
+    "tracks": [
+      { "title": "Melodía 1", "src": "/music/song6.mp3" },
+      { "title": "Melodía 2", "src": "/music/song7.mp3" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Álbum 4",
+    "cover": "/albums/album4.jpg",
+    "tracks": [
+      { "title": "Pista Única", "src": "/music/song8.mp3" }
+    ]
+  }
+]
