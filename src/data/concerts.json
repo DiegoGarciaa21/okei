@@ -2,64 +2,64 @@
   {
     "id": 1,
     "fecha": "2025-10-25",
-    "evento": "Rock Fest Lima",
-    "lugar": "Arena Perú - Lima",
+    "evento": "REINFECCIÓN",
+    "lugar": "EL TEMPLO - AREQUIPA",
     "image": "/conciertos/concert1.jpeg",
     "tickets": "https://tuticket.com/evento1"
   },
   {
     "id": 2,
     "fecha": "2025-10-10",
-    "evento": "Tour Nacional",
-    "lugar": "Cusco Convention Center",
+    "evento": "WASKEN",
+    "lugar": "EL RANCHO - AREQUIPA",
     "image": "/conciertos/concert2.jpeg",
     "tickets": "https://tuticket.com/evento2"
   },
   {
     "id": 3,
     "fecha": "2025-10-04",
-    "evento": "Rock Fest Lima",
-    "lugar": "Arena Perú - Lima",
+    "evento": "MONTAÑA",
+    "lugar": "CERCADO - AREQUIPA",
     "image": "/conciertos/concert3.jpeg",
     "tickets": "https://tuticket.com/evento1"
   },
   {
     "id": 4,
     "fecha": "2025-08-16",
-    "evento": "Tour Nacional",
-    "lugar": "Cusco Convention Center",
+    "evento": "CORSO DEL CAOS",
+    "lugar": "CERCADO - AREQUIPA",
     "image": "/conciertos/concert4.jpeg",
     "tickets": "https://tuticket.com/evento2"
   },
   {
     "id": 5,
     "fecha": "2025-05-09",
-    "evento": "Rock Fest Lima",
-    "lugar": "Arena Perú - Lima",
+    "evento": "BARRIADA VULGAR",
+    "lugar": "TEATRO HELL - AREQUIPA",
     "image": "/conciertos/concert5.jpeg",
     "tickets": "https://tuticket.com/evento1"
   },
   {
     "id": 6,
     "fecha": "2025-04-18",
-    "evento": "Tour Nacional",
-    "lugar": "Cusco Convention Center",
+    "evento": "SEMANA TRANKA",
+    "lugar": "TEATRO HELL - AREQUIPA",
     "image": "/conciertos/concert6.jpeg",
     "tickets": "https://tuticket.com/evento2"
   },
   {
     "id": 7,
     "fecha": "2025-03-08",
-    "evento": "Tour Nacional",
-    "lugar": "Cusco Convention Center",
+    "evento": "MASTERS OF PUNK",
+    "lugar": "CALLE MATARA-CUSCO",
     "image": "/conciertos/concert8.jpeg",
     "tickets": "https://tuticket.com/evento2"
   },
   {
     "id": 8,
     "fecha": "2025-03-07",
-    "evento": "Rock Fest Lima",
-    "lugar": "Arena Perú - Lima",
+    "evento": "KOLQUEPARQUE",
+    "lugar": "AYAVIRI-PUNO",
     "image": "/conciertos/concert7.jpeg",
     "tickets": "https://tuticket.com/evento1"
   }

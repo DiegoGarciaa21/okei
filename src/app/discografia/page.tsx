@@ -41,7 +41,9 @@ export default function DiscografiaPage() {
             alt={album.title}
             className="w-full aspect-square object-cover"
           />
-          <div className="p-4 flex justify-between items-center">
+          <div className="p-4 flex justify-between items-center 
+    bg-zinc-900/95 border-t border-red-700 shadow-[0_0_15px_rgba(239,68,68,0.4)]">
+
             <h2 className="text-lg font-semibold text-white">{album.title}</h2>
             <ChevronDown
               className={`transition ${isOpen ? "rotate-180" : ""}`}
@@ -95,16 +97,9 @@ export default function DiscografiaPage() {
 >
   -DISCOGRAFIA-
 </h1>
+        <div className="mb-20 flex flex-col md:flex-row md:items-start md:gap-8 gap-12">
 
-
-
-
-
-
-
-
-        <div className="mb-20 flex flex-col md:flex-row md:items-start md:gap-8">
-          <div className="flex-1 flex flex-col gap-10 items-start">
+         <div className="flex-1 flex flex-col gap-10 items-start">
             <div className="w-full max-w-lg md:-rotate-[2deg]">
               {renderAlbumCard(mainAlbum, 0)}
             </div>
@@ -120,9 +115,9 @@ export default function DiscografiaPage() {
             {sideAlbums.map((album, i) => {
               const realIndex = i + 1;
               const tilt =
-                realIndex === 1
-                  ? "md:rotate-[2deg] md:-translate-y-4"
-                  : "md:-rotate-[2deg] md:translate-y-2";
+  realIndex === 1
+    ? "rotate-[1deg] md:rotate-[2deg] md:-translate-y-4"
+    : "-rotate-[1deg] md:-rotate-[2deg] md:translate-y-2";
 
               return (
                 <div key={album.id} className={tilt}>
