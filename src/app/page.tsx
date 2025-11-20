@@ -145,10 +145,7 @@ function QuienesSomos() {
         </div>
 
         <p className="text-zinc-300 text-lg md:text-xl leading-relaxed mx-auto max-w-3xl px-2 bg-black/20 py-6 rounded-xl backdrop-blur-sm border border-zinc-700 shadow-inner">
-          Hace años, cuando la ciudad parecía repetirse todos los días, decidimos romper el ciclo…
-          <br />
-          Somos música hecha desde la calle, desde la amistad y desde las ganas de seguir jodiendo al destino. Somos Los Falsos,
-          y esta historia recién empieza.
+          Hace muchos años un grupo de amigos vinculados por la amistad, los tragos y lo cansado de ver lo mismo, decidimos enrumbar por la senda de la música, aunque no éramos buenos tocando desde el 2007 se gestaron unos proyectos (Maniacos y Zaurios), el cual pasaron distintos amigos que ahora ya no están, pero estarán siempre en nuestros corazones y por respeto a su ausencia sonora decidieron cambiar de nombre. No obstante, al final solo quedaron los que salieron y fueron expulsados por el aburrimiento, ahora se llaman LOS FALSOS, un grupo de amigos de barrio y de fin de semana.
         </p>
       </div>
     </motion.section>
@@ -214,7 +211,7 @@ function Integrantes() {
             <Image src="/integrantes/armando.jpg" alt="Armando Belze" width={400} height={450} className="object-cover w-full h-[300px]" />
           </div>
           <h3 className="text-xl font-bold text-white text-center">Armando Belze</h3>
-          <p className="text-red-400 font-semibold text-center">2da Voz</p>
+          <p className="text-red-400 font-semibold text-center">Tragos y Gritos</p>
         </motion.div>
       </div>
     </motion.section>
