@@ -23,6 +23,11 @@ export default function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // 🔥 Cerrar menú móvil automáticamente al cambiar de página
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
   // Scroll sin hash
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
@@ -219,4 +224,3 @@ export default function Navbar() {
     </nav>
   );
 }
-
